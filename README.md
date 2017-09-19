@@ -1,5 +1,3 @@
-# personal-website-tutorial
-SEC's personal website tutorial of Fall 2017 
 # Personal Website Tutorial
 Welcome to this personal website tutorial! Today we're going to be using **HTML** (Hypertext Markup Language), **CSS** (Cascading Style Sheets), and a little **Javascript** to spice things up.
 
@@ -12,7 +10,8 @@ Welcome to this personal website tutorial! Today we're going to be using **HTML*
 Wikipedia says:
 >Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[2] Web browsers receive documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
 
-##What does it actually mean?
+## What does it actually mean?
+
 HTML is like a skeleton of a webpage. When you create a website, this is what gives it a structure. HTML is not a programming language. The neat but sometimes frustrating thing is that your browser will try its best to load your website even if you're missing brackets somewhere along the way.
 CSS is what makes everything look pretty and you can even have some simple functionality built into CSS like drawing shapes or transformations.
 
@@ -37,10 +36,9 @@ If you're using Chrome, right click on the website and select **Inspect**
 If you're using Firefox, go to your menu bar and follow this chain: **Tools -> Web Developer -> Inspector**
 
 Feel free to play around with it!
+Now onto the actual coding part...
 
-## Now onto the actual coding part...
-
-##Quickstart guide to HTML/CSS
+## Quickstart guide to HTML/CSS
 ```html
 
 <h1> Title </h1>
@@ -177,7 +175,7 @@ And here's how we're changing the font of this navigation bar
 }
 ```
 
-##Let's make the landing page!
+## Let's make the landing page!
 
 Feel free to write your name in the header and a quick blurb in the paragraph tags
 ```html
@@ -188,7 +186,17 @@ Feel free to write your name in the header and a quick blurb in the paragraph ta
           </div>
     </div>
 ```
-This looks kind of boring so let's spice things up by adding style to our style fyle
+This looks kind of boring so let's spice things up by adding style
+
+We're going to keep this snippet of code within the style tags of our index so that we can change the image of other tabs later. We can't do that if they're inheriting the picture from the same file
+
+```css
+
+.image{
+    background-image: url("img/forest.jpg");
+}
+```
+In our style file we're going to use this code because we want it to be consistent across all the different pages
 
 ```css
 
@@ -210,13 +218,6 @@ This looks kind of boring so let's spice things up by adding style to our style 
     }
 
 ```
-Now that we have this in place let's add an image which will be specific to the index in the index.html file. Why do we do this? Well, we want to make each tab have a different picture but we can't do that if they're inheriting the picture from the same file
-
-```css
-.image{
-    background-image: url("img/forest.jpg");
-}
-```
 
 I want to make the header and the button look different from the rest, however, so we can play around with selectors to make it do just that
 
@@ -230,7 +231,7 @@ I want to make the header and the button look different from the rest, however, 
 }
 ```
 
-##Blog style posts
+## Blog style posts
 
 ```html
 
@@ -350,10 +351,10 @@ i{
     padding: 10px;
 }
 ```
-We're ready to move onto our resume
-##Resume page
+## Resume page
 Same as before, we're going to make a landing page by copying over our navigation bar and making a post.
 Here's the color we're going to use and the image for our landing page
+
 ```css
 #first{
     background: #b18c75;
@@ -383,6 +384,7 @@ You can get creative with it and do something else entirely!
 Email or facebook message me your completed challenge, live website, or any other ways you get creative with this template and you'll get mad brownie points :sparkles:
 
 With your permission, we can even feature your website on our Facebook and website!
+
 ## Helpful links, tips, and sources
 Special thank you to w3schools for being my main source of learning how to make websites!
 https://www.w3schools.com/
@@ -401,5 +403,6 @@ Design inspo over at muz.li
 https://muz.li/
 Hosting your website with github
 https://pages.github.com/
+
 ## Thanks for following along!
 My name is Daniela and my email is dtravie@gmail.com if you have any questions or comments
